@@ -1,0 +1,128 @@
+.m_nav{
+    height: 38px;
+    background-image: linear-gradient(#fff,#ccc);
+    border-top: 2px solid #cccccc;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 0 10px;
+}
+.m_nav .close{
+    border: 1px solid #cccccc;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 8px;
+    margin-top: 2px;
+    background-image: linear-gradient(#ccc,#fff);
+}
+
+.m_main .main_t{
+    width: 100%;
+    height: 375px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.m_main .main_t img{
+    display: block;
+    width: 170px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.m_main .main_t .shou{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.main_nav a{
+    color: #FFFFFF;
+    font-size: 20px;
+    border-top:1px solid #666;
+    border-bottom: 1px solid #666;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ff841d;
+    width: 33.33%;
+    text-align: center;
+}
+.main_nav a:nth-child(2){
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+}
+.main_nav a.now{
+    background-color: #ffc936;
+}
+.m_main .main_c{
+   height: 50px;
+    border-bottom: 1px solid #cccccc;
+    line-height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.main_c button{
+    background-color: #f50;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.red{
+    text-align: right;
+    padding-right: 10px;
+    color: red;
+}
+.m_main .info{
+    border-bottom: 5px solid #666666;
+    height: 60px;
+    font-size: 12px;
+    color: #cccccc;
+    padding: 10px;
+}
+.comment{
+    margin-top: 5px;
+}
+.comment_t{
+   height: 35px;
+    background-color: #dbdbdb;
+    text-align: center;
+    line-height: 35px;
+}
+.comment_c{
+    font-size: 12px;
+    border-bottom: 1px solid #cccccc;
+}
+.line{
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.comment_c .shop{
+    margin-top: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.cl{
+    color: #666;
+}
+
+.m_more {
+    margin: 10px 10px 0 10px;
+    background-color: #f1f1f1;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+.footer_c{
+    padding-top: 0;
+    margin-top: 20px;
+}
+.cate{
+    width: 30px;
+    overflow: hidden;
+    height: 38px;
+    /*display: inline-block;*/
+}

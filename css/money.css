@@ -1,0 +1,15 @@
+.m_header{
+     text-align: center;
+    line-height: 30px;
+ }
+.m_header .m_header_l{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m_header .fa-chevron-left{
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}

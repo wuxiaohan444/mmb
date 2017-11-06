@@ -1,0 +1,28 @@
+@charset "utf-8";
+.m_content .c_title{
+    height: 40px;
+    background-color: #ededed;
+    border-radius: 5px 5px 0 0;
+    font-weight: 700;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.m_content .c_main{
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.m_content .c_main a{
+    width: 33.33%;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    display: block;
+}
+.m_content .c_main.now{
+    display: none;
+}
+.m_footer .footer_t{
+    height: 30px;
+}

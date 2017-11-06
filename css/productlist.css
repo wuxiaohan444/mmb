@@ -1,0 +1,46 @@
+@charset "utf-8";
+.m_nav{
+    height: 38px;
+    background-image: linear-gradient(#fff,#ccc);
+    border-top: 2px solid #cccccc;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 0 10px;
+}
+.m_nav .close{
+    border: 1px solid #cccccc;
+    height: 30px;
+    padding: 0 15px;
+    border-radius: 8px;
+    margin-top: 2px;
+    background-image: linear-gradient(#ccc,#fff);
+}
+.m_main a{
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+}
+.m_main a .img{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.m_main .main_r{
+    padding-left: 125px;
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.main_r .pice{
+    color: red;
+    font-size: 18px;
+    line-height: 30px;
+}
+.main_r span{
+    font-size: 12px;
+    color: #cccccc;
+}

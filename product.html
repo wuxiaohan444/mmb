@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+<div class="container">
+    <div id="head" class="m_header clearfix">
+        <a href="index1.html" class="m_header_l"><img src="images/header_logo.png" alt=""></a>
+        <a href="javascript:;" class="m_header_r fr"><img src="images/header_app.png" alt=""></a>
+    </div>
+    <div class="m_search">
+        <input type="text" placeholder="请输入你想要比价的商品">
+        <button>搜索</button>
+    </div>
+    <div class="m_nav">
+        <a href="index1.html" class="fl">首页</a>
+        <span class="fl" >&gt;</span>
+        <a href="categroy.html" class="fl">全部分类</a>
+        <span class="fl">&gt;</span>
+        <a href="javascript:;" class="cate fl">
+            <!--模板渲染-->
+        </a>
+        <span class="fl">&gt;</span>
+        <div class="close fr">筛选</div>
+    </div>
+    <div class="m_main">
+       <div class="main_t">
+           <!--模板渲染-->
+       </div>
+        <div class="main_nav clearfix">
+            <a href="javascript:;" class="fl">比价购买</a>
+            <a href="javascript:;" class="fl now">产品参数</a>
+            <a href="javascript:;" class="fl now">评价</a>
+        </div>
+        <div class="main_c">
+        <!--模板渲染-->
+        </div>
+        <div class="info">
+            <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="comment_t">网友评论</div>
+        <div class="comment_c clearfix">
+            <!--模板渲染-->
+        </div>
+    </div>
+    <div class="m_more"><a href="javascript:;">查看更多评论</a></div>
+    <div class="footer_c clearfix">
+        <a href="javascript:;" class="fl">登陆</a>
+        <a href="javascript:;" class="fl">注册</a>
+        <a href="#head" class="fl"><span class="fa fa-arrow-up"></span>返回顶部</a>
+    </div>
+    <div class="m_poster">
+        <p><span style="color: red">手机APP下载</span>慢慢买手机版 <span>掌上比价平台</span></p>
+        <p>m.mammanbuy.com</p>
+    </div>
+</div>
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <span>{{v.productName}}</span>
+    {{/each}}
+</script>
+<script type="text/html" id ="tpl2">
+    {{each result v i}}
+    <p>{{v.productName}}</p>
+    <%- v.productImg%>
+    <img src="images/ic_cu.png" class="shou">
+    {{/each}}
+</script>
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+    <div class="line">
+    <span class="fl cl">{{v.comName}}</span>
+    <span class="fr cl">{{v.comTime}}</span>
+    <div class="shop cl">{{v.comFrom}}</div>
+    <div class="text">
+    {{v.comContent}}
+    </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="tpl4">
+{{each result v i}}
+    <%- v.bjShop%>
+    {{/each}}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/product.js"></script>
+</body>
+</html>
