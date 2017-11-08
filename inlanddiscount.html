@@ -7,7 +7,7 @@
     <title>慢慢买</title>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/moneyproduct.css">
+    <link rel="stylesheet" href="css/inlanddiscount.css">
 </head>
 <body>
 <div class="container">
@@ -18,7 +18,9 @@
     </div>
 
     <div class="m_content">
-   <!--动态渲染-->
+        <ul class="clearfix main">
+            模板渲染
+        </ul>
     </div>
 
     <div class="m_footer">
@@ -32,35 +34,24 @@
             <p>m.mammanbuy.com</p>
         </div>
     </div>
-
 </div>
+
+
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <h4>{{v.productName}}L</h4>
-    <p>
-        <span>{{v.productFrom}}</span>
-        <span>{{v.productTime}}</span>
-        <span>{{v.productTips}}</span>
-    </p>
-    <div class="text">
-       <%- v.productImgSm %>
-        <p>{{v.productInfo}}</p>
-        <p>{{v.productInfo1}}</p>
-    </div>
-    <div class="info">
-        <%- v.productImgLg %>
-        <div class="shuju">
-            <%- v.productCity %>
-        </div>
-        <a class="buy" href="">前往购买</a>
-    </div>
-    <img src="images/mmbweixin2.png" alt="" class="er">
-    <%- v.productComment %>
+    <li>
+        <a href="discount.html?productid={{v.productId}}">
+           <%- v.productImg %>
+        <h3 class="ce-2">{{v.productName}}</h3>
+        <p class="pie" style="color: red">{{v.productPrice}}</p>
+        <p class="time">{{v.productFrom}} | {{v.productTime}}</p>
+    </a>
+    </li>
     {{/each}}
 </script>
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
-<script src="js/common.js"></script>
-<script src="js/moneyproduct.js"></script>
+<script src="js/inlanddiscount.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,139 @@
+.m_header{
+    text-align: center;
+    line-height: 30px;
+}
+.m_header .m_header_l{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m_header .fa-chevron-left{
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.m_nav{
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    border-bottom: 1px solid #cccccc;
+}
+.m_nav  a{
+    width: 33.33%;
+    padding-left: 20px;
+}
+.m_nav .icon{
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+.m_nav .icon img{
+    width: 100%;
+}
+.m_nav .menu{
+    display: none;
+    height: 100%;
+    background-color: #FFFFFF;
+
+}
+.m_nav .menu li{
+    /*background-color: #606060;*/
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    height: 38px;
+    z-index: 999;
+    padding-bottom: 38px;
+}
+.m_nav .menu  ul a{
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+}
+.m_nav .menu.now{
+display: block;
+}
+
+.m_nav .menu .one{
+    display:inline-block;
+    height: 20px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.fa-check{
+    display: none;
+}
+.fa-check.now{
+    display: block;
+}
+/*？？？*/
+.m_nav .menu2{
+    display: none;
+    background-color: #FFFFFF;
+}
+.m_nav .menu2 li{
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    height: 38px;
+    z-index: 999;
+}
+.m_nav .menu2.now{
+    display: block;
+}
+.m_nav .menu2  ul a{
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+.m_footer{
+    margin-top: 20px;
+}
+
+.m_content{
+    /*background-color: #f1f1f1;*/
+
+}
+.m_content ul{
+    border-top: 10px solid #f1f1f1;
+    border-left: 10px solid #f1f1f1;
+}
+.m_content li{
+    width: 50%;
+    border-bottom: 10px solid #f1f1f1;
+    border-right: 10px solid #f1f1f1;
+    height: 240px;
+}
+.m_content li img{
+    width: 174px;
+    height: 174px;
+    display: block;
+    margin: 0 auto;
+}
+.m_content li .one{
+    font-size: 12px;
+    overflow: hidden;
+    width: 100%;
+    height: 16px;
+}
+.m_content li p span{
+    color: red;
+    font-size: 20px;
+}
+.m_content li p button {
+    background-color:#ff841d;
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.m_content li .pice{
+    padding-top: 10px;
+}

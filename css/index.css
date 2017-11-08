@@ -40,11 +40,16 @@
     padding-top: 10px;
 }
 
-.content_main {
-
+.content_main li{
 }
-
-
+.content_main li .title{
+    font-size: 14px;
+}
+.content_main .main_r p{
+    padding-top: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
 
 .m_more {
     margin: 10px 10px 0 10px;

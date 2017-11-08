@@ -1,0 +1,77 @@
+.m_header{
+    text-align: center;
+    line-height: 30px;
+    background-color: #F4483E;
+}
+.m_header .m_header_l{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m_header .fa-chevron-left{
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.m_info{
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+}
+.m_content li{
+    border-bottom: 1px solid #cccccc;
+    height: 115px;
+}
+.m_content li a{
+    padding: 10px;
+    display: block;
+}
+
+.m_content li img{
+    width: 100px;
+    height: 80px;
+    float: left;
+    padding-right: 10px;
+}
+.m_content li h3{
+    font-weight: 100;
+    font-size: 14px;
+}
+.m_content li .time{
+    font-size: 12px;
+    color: orange;
+    padding-left: 110px;
+}
+.m_content li p{
+    font-size: 14px;
+    font-weight: 700;
+}
+.m_content li .icon{
+   margin-top: 30px;
+    font-size: 20px;
+}
+.container{
+    position: relative;
+}
+.modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+.modal.now{
+    display: block;
+}
+.modal .pic{
+    margin:200px auto;
+    width: 100px;
+    height: 80px;
+    background-color: red;
+}
+.modal .pic img{
+    width: 100%;
+}

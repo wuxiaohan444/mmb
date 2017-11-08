@@ -1,0 +1,105 @@
+.m_header{
+    text-align: center;
+    line-height: 30px;
+    background-color: #F4483E;
+}
+.m_header .m_header_l{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m_header .fa-chevron-left{
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.m_nav{
+    height: 38px;
+    overflow: hidden;
+    line-height: 35px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.scoll{
+    overflow: scroll;
+    height: 55px;
+}
+.m_nav li{
+    width: 52px;
+    font-size: 12px;
+}
+.m_nav li.now{
+    border-bottom: 4px solid red;
+}
+.m_nav  .icon {
+    width: 38px;
+    height: 38px;
+    background-color: violet;
+    position: absolute;
+    right: 0px;
+
+}
+.m_nav  .icon img{
+    width: 100%;
+}
+
+.m_content ul li{
+    border-top: 4px solid #f5f5f5;
+    padding: 10px;
+    font-size: 12px;
+    position: relative;
+    padding-left: 150px;
+    height: 180px;
+}
+.m_content ul li img{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.m_content ul li .pic{
+    padding-top: 15px;
+    font-size: 20px;
+    color: red;
+}
+.m_content ul li .pic del{
+    font-size: 12px;
+    color: #666666;
+    padding-left: 10px;
+}
+.bar{
+    padding-top: 20px;
+}
+.bar i{
+    display: inline-block;
+    background-color: red;
+    opacity: 0.4;
+    color: #FFFFFF;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+.bar b{
+    color: red;
+    font-weight: 100;
+    font-size: 12px;
+    padding-left: 10px;
+}
+.last{
+    padding-top: 20px;
+}
+.last a:first-child{
+    display: inline-block;
+    border: 1px dashed red;
+    color: red;
+}
+.last a:last-child{
+    float: right;
+    color:#fff ;
+    background-color: red;
+    opacity: 0.7;
+    padding: 3px;
+    border-radius: 5px;
+}

@@ -1,0 +1,37 @@
+.m_nav{
+    height: 38px;
+    background-image: linear-gradient(#fff,#ccc);
+    border-top: 2px solid #cccccc;
+    font-size: 14px;
+    line-height: 38px;
+    padding: 0 10px;
+}
+.m_comment{
+   height: 40px;
+    padding: 10px;
+    margin: 10px 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+}
+.m_comment h3{
+    font-weight: 500;
+    color: #976129;
+}
+.m_content{
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    background-color:#ededed ;
+    overflow: hidden;
+}
+.m_content li{
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.m_content li a{
+    font-weight:700 ;
+    width: 100%;
+    display: block;
+}

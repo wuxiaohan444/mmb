@@ -1,13 +1,14 @@
 /**
- * Created by 吴晗 on 2017/11/6 0006.
+ * Created by 吴晗 on 2017/11/7 0007.
  */
 $(function () {
     var id = getid();
+    console.log(id);
     $.ajax({
         type:"get",
-        url:"http://192.168.32.34:9090/api/getmoneyctrlproduct",
+        url:"http://192.168.32.34:9090/api/getdiscountproduct",
         data:{
-            productid:id
+            productid :id
         },
         dataType:"json",
         success:function (data) {
@@ -15,5 +16,4 @@ $(function () {
             $(".m_content").html(template("tpl",data))
         }
     })
-
 })

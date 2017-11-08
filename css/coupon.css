@@ -1,0 +1,37 @@
+.m_header{
+    text-align: center;
+    line-height: 30px;
+    background-color: #F4483E;
+}
+.m_header .m_header_l{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+.m_header .fa-chevron-left{
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.m_content{
+    margin-top: 20px;
+}
+.m_content li{
+    width: 119px;
+    border: 1px solid #000;
+    height: 75px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.m_content li img{
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 5px auto;
+    margin-bottom: 2px;
+}
+.m_content li p{
+   text-align: center;
+    font-size: 12px;
+}

@@ -2,14 +2,10 @@
  * Created by 吴晗 on 2017/11/6 0006.
  */
 $(function () {
-    var search = location.search;
-    search = search.slice(1);
-    var arr = search.split("&");
-    var Arr = arr[0].split("=");
-    var id = Arr[1];
+    var id = getid();
     $.ajax({
         type:"get",
-        url:"http://192.168.32.36:9090/api/getcategorybyid",
+        url:"http://192.168.32.34:9090/api/getcategorybyid",
         data:{
             categoryid:id
         },
@@ -44,7 +40,7 @@ $(function () {
     function render(id,page) {
         $.ajax({
             type:"get",
-            url:"http://192.168.32.36:9090/api/getproductlist",
+            url:"http://192.168.32.34:9090/api/getproductlist",
             data:{
                 pageid:page,
                 categoryid:id

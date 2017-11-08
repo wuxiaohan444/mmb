@@ -24,7 +24,7 @@ $(function () {
     function render(page) {
         $.ajax({
             type:"get",
-            url:"http://192.168.32.36:9090/api/getmoneyctrl",
+            url:"http://192.168.32.34:9090/api/getmoneyctrl",
             data:{
                 pageid:page
             },

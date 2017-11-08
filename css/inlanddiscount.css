@@ -1,0 +1,56 @@
+.m_header {
+    text-align: center;
+    line-height: 30px;
+}
+
+.m_header .m_header_l {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.m_header .fa-chevron-left {
+    line-height: 33px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.m_content li {
+    width: 50%;
+    padding: 10px;
+    float: left;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.m_content li a{
+    display: block;
+    height: 230px;
+}
+.m_content li img {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    display: block;
+}
+
+.m_content li h3 {
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.m_content li .pie {
+   padding-top: 6px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.m_content li .time {
+    font-size: 12px;
+    color: #666666;
+    padding-top: 7px;
+}

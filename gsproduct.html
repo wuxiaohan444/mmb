@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="container">
+    <div id="head" class="m_header clearfix">
+        <a href="javascript:history.go(-1);"><span class="fa fa-chevron-left fl"></span></a>
+        <a href="javascript:;" class="m_header_l">凑单品</a>
+        <a href="javascript:;" class="m_header_r fr"><img src="images/header_app.png" alt=""></a>
+    </div>
+    <div class="m_nav clearfix ">
+        <div class="icon"><img src="images/图像 1.png" alt=""></div>
+        <div class="ul clearfix">
+            <a href="javascript:;" class="fl"> <span id="text">京东</span> <span class="fa fa-caret-up"></span></a>
+            <a href="javascript:;" class="fl"> <span id="txt">华北</span> <span class="fa fa-caret-up"></span></a>
+            <a href="javascript:;" class="fl"> <span>全部价格</span> <span class="fa fa-caret-up"></span></a>
+        </div>
+        <div class="clearfix">
+            <div class="menu clearfix">
+                <ul>
+                    <!--模板渲染-->
+                </ul>
+            </div>
+            <div class="menu2 clearfix">
+                <ul>
+                    <li class="clearfix">
+                        <a href="javascript:;" class="clearfix">全部价格<p class="fr" style="color: orange;"><span
+                                class="fa fa-check "></span></p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="m_content">
+        <ul class="clearfix">
+
+
+        </ul>
+    </div>
+    <div class="m_footer">
+        <div class="footer_c clearfix">
+            <a href="javascript:;" class="fl">登陆</a>
+            <a href="javascript:;" class="fl">注册</a>
+            <a href="#head" class="fl"><span class="fa fa-arrow-up"></span>返回顶部</a>
+        </div>
+        <div class="m_poster">
+            <p><span style="color: red">手机APP下载</span>慢慢买手机版 <span>掌上比价平台</span></p>
+            <p>m.mammanbuy.com</p>
+        </div>
+    </div>
+</div>
+<script type="text/html" id="tpl">
+    {{each result v i}}
+    <li data-id="{{v.shopId}}">
+        <a href="javascript:;">{{v.shopName}}<p class="fr" style="color: orange;"><span class="fa fa-check "></span></p></a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+    {{each result v i}}
+    <li  data-id="{{v.areaId}}">
+        <a href="javascript:;">{{v.areaName}}<p class="fr" style="color: orange;"><span
+                class="fa fa-check" style="display: none"></span></p></a>
+    </li>
+    {{/each}}
+</script>
+
+
+<script type="text/html" id="tpl3">
+    {{each result v i}}
+    <li class="fl"><a href="javascript:;">
+        <img src="{{v.productImg}}" alt="">
+        <p class="one">{{v.productName}}</p>
+        <p class="pice"><span>{{v.productPrice}}</span>
+            <button>去凑单</button></p>
+    </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

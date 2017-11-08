@@ -18,7 +18,7 @@
     </div>
 
     <div class="m_content">
-   <!--动态渲染-->
+        <!--动态渲染-->
     </div>
 
     <div class="m_footer">
@@ -38,19 +38,20 @@
     {{each result v i}}
     <h4>{{v.productName}}L</h4>
     <p>
-        <span>{{v.productFrom}}</span>
-        <span>{{v.productTime}}</span>
-        <span>{{v.productTips}}</span>
+        <h4 style="color: red">{{v.productPrice}}</h4>
+        <span class="cc">{{v.productFrom}}</span>
+        <span class="cc">{{v.productTime}}</span>
+        <span class="cc">{{v.productTips}}</span>
     </p>
     <div class="text">
-       <%- v.productImgSm %>
+        <%- v.productImg %>
         <p>{{v.productInfo}}</p>
         <p>{{v.productInfo1}}</p>
     </div>
     <div class="info">
-        <%- v.productImgLg %>
+        <%- v.productImg %>
         <div class="shuju">
-            <%- v.productCity %>
+            <!--<%- v.productCity %>-->
         </div>
         <a class="buy" href="">前往购买</a>
     </div>
@@ -61,6 +62,6 @@
 <script src="lib/artTemplate/template-web.js"></script>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/moneyproduct.js"></script>
+<script src="js/discount.js"></script>
 </body>
 </html>
