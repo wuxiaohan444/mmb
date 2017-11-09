@@ -36,18 +36,27 @@
         </div>
     </div>
 
-
     <div class="modal">
-        <div class="pic"><img src="images/kfc-5ikfc-108_pc27.jpg" alt=""></div>
+        <span class="fa fa-close"></span>
+        <div class="slider">
+            <ul class="pic">
+
+            </ul>
+            <div class="arrow">
+                <span class="arrow-left">&lt;</span>
+                <span class="arrow-right">&gt;</span>
+            </div>
+
+        </div>
     </div>
 </div>
 
 <script type="text/html" id="tpl">
     {{each result v i}}
-    <li>
+    <li data-id="{{v.couponId}}">
         <div class="icon fr"><span class="fa fa-angle-right"></span></div>
-        <a href="#">
-          <%- v.couponProductImg %>
+        <a href="#head">
+            <%- v.couponProductImg %>
             <h3>{{v.couponProductName}}</h3>
             <p>{{v.couponProductPrice}}</p>
             <p class="time">{{v.couponProductTime}}</p>
@@ -56,7 +65,9 @@
 </script>
 <script type="text/html" id="tp2">
     {{each result v i}}
-
+    <li>
+        <%- v.couponProductImg %>
+    </li>
     {{/each}}
 </script>
 <script src="lib/artTemplate/template-web.js"></script>

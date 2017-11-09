@@ -22,7 +22,7 @@
 }
 .m_content li{
     border-bottom: 1px solid #cccccc;
-    height: 115px;
+    height: 120px;
 }
 .m_content li a{
     padding: 10px;
@@ -33,6 +33,7 @@
     width: 100px;
     height: 80px;
     float: left;
+    padding-top: 10px;
     padding-right: 10px;
 }
 .m_content li h3{
@@ -66,12 +67,45 @@
 .modal.now{
     display: block;
 }
-.modal .pic{
-    margin:200px auto;
+.modal ul{
+
+
+}
+.modal .slider{
     width: 100px;
     height: 80px;
-    background-color: red;
+    position: relative;
+    margin: 200px auto;
 }
+.modal ul li{
+    position: absolute;
+    top: 0;
+   left: 0;
+}
+
+
 .modal .pic img{
     width: 100%;
+}
+.arrow .arrow-left{
+    font-size: 36px;
+    position: absolute;
+    left: -40px;
+    top: 16px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.arrow .arrow-right{
+    font-size: 36px;
+    position: absolute;
+    right: -40px;
+    top: 16px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.fa-close{
+    position: absolute;
+    color: #FFFFFF;
+    right: 15px;
+    top: 15px;
 }

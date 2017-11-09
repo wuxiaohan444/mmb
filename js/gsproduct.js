@@ -17,6 +17,7 @@ $(function () {
                 $(".m_nav .menu ul").html(template("tpl", data));
                 $(".menu ul>li").each(function (i, e) {
                     $(".menu ul>li").eq(i).on("click", function () {
+                        $(".menu").toggleClass("now");
                         var text = $(this).text();
                         console.log(text);
                         $("#text").text(text);
@@ -43,6 +44,7 @@ $(function () {
                 $(".m_nav .menu ul").html(template("tpl2", data));
                 $(".menu ul>li").each(function (i, e) {
                     $(".menu ul>li").eq(i).on("click", function () {
+                        $(".menu").toggleClass("now");
                         var text = $(this).text().trim().slice(0, 2);
                         console.log(text);
                         $("#txt").text(text);
