@@ -9,7 +9,7 @@ $(function () {
     function render(page) {
         $.ajax({
             type:"get",
-            url:"http://192.168.32.26:9090/api/getmoneyctrl",
+            url: ip+"/api/getmoneyctrl",
             data:{
                 pageid:page
             },
@@ -49,7 +49,7 @@ $(function () {
             var count = Math.ceil(totalCount / pagesize);
             var datas = [];
             for (var i = 0; i < count; i++) {
-                var  data = {page: page + i, count: count};
+                var  data = {count: count};
                 datas.push(data);
             }
             $(".info").html(template("tpl2", {data: datas}));

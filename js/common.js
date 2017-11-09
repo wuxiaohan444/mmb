@@ -11,3 +11,5 @@ function getid() {
     return id;
 }
 
+var ip="http://192.168.32.26:9090";
+

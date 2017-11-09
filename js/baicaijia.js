@@ -5,7 +5,7 @@ $(function () {
     var id = getid();
     $.ajax({
         type:"get",
-        url:"http://192.168.32.26:9090/api/getbaicaijiatitle",
+        url:ip+"/api/getbaicaijiatitle",
         dataType:"json",
         success:function (data) {
             console.log(data);
@@ -33,7 +33,7 @@ $(function () {
     function render(id) {
         $.ajax({
             type:"get",
-            url:"http://192.168.32.40:9090/api/getbaicaijiaproduct",
+            url:ip+"/api/getbaicaijiaproduct",
             data:{
                 titleid:id
             },

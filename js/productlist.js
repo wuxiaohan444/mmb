@@ -26,14 +26,13 @@ $(function () {
 
     $(".page .up").on("click", function () {
         time();
-        if (page <= 1) {
-            page = Math.ceil(totalCount / pagesize)-1;
+        if (page <=1) {
+            page = 2;
         }
         page--;
         render(id, page)
         $(".info option").text(page + "/" + Math.ceil(totalCount / pagesize));
         console.log(page);
-
     });
     $(".page .down").on("click", function () {
         time();
@@ -48,7 +47,7 @@ $(function () {
 
     $.ajax({
         type: "get",
-        url: "http://192.168.32.26:9090/api/getcategorybyid",
+        url: ip+"/api/getcategorybyid",
         data: {
             categoryid: id
         },
@@ -63,7 +62,7 @@ $(function () {
             var count = Math.ceil(totalCount / pagesize);
             var datas = [];
             for (var i = 0; i < count; i++) {
-              var  data = {page: page + i, count: count};
+              var  data = {count: count};
                 datas.push(data);
             }
             $(".info").html(template("tpl3", {data: datas}));

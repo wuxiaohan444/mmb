@@ -5,7 +5,7 @@ $(function () {
     var brandtitleid = getid();
     $.ajax({
         type: "get",
-        url: "http://192.168.32.26:9090/api/getbrand",
+        url: ip+"/api/getbrand",
         dataType: "json",
         data: {
             brandtitleid: brandtitleid
@@ -17,7 +17,7 @@ $(function () {
     });
     $.ajax({
         type: "get",
-        url: "http://192.168.32.26:9090/api/getbrandproductlist",
+        url: ip+"/api/getbrandproductlist",
         dataType: "json",
         data: {
             brandtitleid: brandtitleid,
@@ -31,7 +31,7 @@ $(function () {
             var img = $(".m_tv ul li").data("img");
             $.ajax({
                 type: "get",
-                url: "http://192.168.32.34:9090/api/getproductcom",
+                url: ip+"/api/getproductcom",
                 dataType: "json",
                 data: {
                     productid: id

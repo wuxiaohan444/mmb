@@ -5,7 +5,7 @@ $(function () {
     var id = getid();
     $.ajax({
         type: "get",
-        url: "http://192.168.32.26:9090/api/getcouponproduct",
+        url: ip+"/api/getcouponproduct",
         data: {
             couponid: id
         },

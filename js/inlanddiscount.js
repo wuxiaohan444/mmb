@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type:"get",
-        url:"http://192.168.32.26:9090/api/getinlanddiscount",
+        url:ip+"/api/getinlanddiscount",
         dataType:"json",
         success:function (data) {
             console.log(data);
