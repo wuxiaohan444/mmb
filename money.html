@@ -16,7 +16,6 @@
         <a href="javascript:;" class="m_header_l">省钱控-最新优惠</a>
         <a href="javascript:;" class="m_header_r fr"><img src="images/header_app.png" alt=""></a>
     </div>
-
     <div class="m_content">
         <div class="content_main">
             <ul class="clearfix">
@@ -24,29 +23,14 @@
             </ul>
         </div>
     </div>
-
-
     <div class="page">
         <a href="javascript:;" class="up">上一页</a>
         <select name="" id="" class="info">
-            <option value="">1/14</option>
-            <option value="">2/14</option>
-            <option value="">3/14</option>
-            <option value="">4/14</option>
-            <option value="">5/14</option>
-            <option value="">6/14</option>
-            <option value="">7/14</option>
-            <option value="">8/14</option>
-            <option value="">9/14</option>
-            <option value="">10/14</option>
-            <option value="">11/14</option>
-            <option value="">12/14</option>
-            <option value="">13/14</option>
-            <option value="">14/14</option>
+            <!--渲染-->
+
         </select>
         <a href="javascript:;" class="down">下一页</a>
     </div>
-
     <div class="m_footer">
         <div class="footer_c clearfix">
             <a href="javascript:;" class="fl">登陆</a>
@@ -73,6 +57,11 @@
             </div>
         </a>
     </li>
+    {{/each}}
+</script>
+<script type="text/html" id="tpl2">
+    {{each data v i}}
+    <option value="{{i}}">{{i+1}}/{{v.count}}</option>
     {{/each}}
 </script>
 <script src="lib/artTemplate/template-web.js"></script>

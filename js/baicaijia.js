@@ -5,7 +5,7 @@ $(function () {
     var id = getid();
     $.ajax({
         type:"get",
-        url:"http://192.168.32.34:9090/api/getbaicaijiatitle",
+        url:"http://192.168.32.26:9090/api/getbaicaijiatitle",
         dataType:"json",
         success:function (data) {
             console.log(data);

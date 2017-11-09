@@ -4,7 +4,7 @@
 $(function () {
     $.ajax({
         type:"get",
-        url:"http://192.168.32.34:9090/api/getcategorytitle",
+        url:"http://192.168.32.26:9090/api/getcategorytitle",
         dataType:"json",
         success:function (data) {
             console.log(data);
@@ -21,7 +21,7 @@ $(function () {
     function render(id) {
         $.ajax({
             type:"get",
-            url:"http://192.168.32.34:9090/api/getcategory",
+            url:"http://192.168.32.26:9090/api/getcategory",
             data:{
                 titleid:id
             },

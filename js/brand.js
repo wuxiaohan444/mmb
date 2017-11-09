@@ -5,7 +5,7 @@ $(function () {
     var brandtitleid = getid();
     $.ajax({
         type: "get",
-        url: "http://192.168.32.34:9090/api/getbrand",
+        url: "http://192.168.32.26:9090/api/getbrand",
         dataType: "json",
         data: {
             brandtitleid: brandtitleid
@@ -17,7 +17,7 @@ $(function () {
     });
     $.ajax({
         type: "get",
-        url: "http://192.168.32.34:9090/api/getbrandproductlist",
+        url: "http://192.168.32.26:9090/api/getbrandproductlist",
         dataType: "json",
         data: {
             brandtitleid: brandtitleid,
